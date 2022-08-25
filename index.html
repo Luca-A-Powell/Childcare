@@ -9,14 +9,16 @@
   color: #333c47;
   padding: 96px;
   max-width:1000px;
-}
-
-.wrapper {
-  padding: 96px;
+  margin: 0 auto;
 }
 
 body{
   margin: 0;
+}
+
+a {
+  z-index: 10000;
+  position: relative;
 }
 
 .hero-wrapper {
@@ -148,6 +150,10 @@ line-height: 28px;
   font-size: 12px;
   line-height: 18px; 
   }
+}
+
+a {
+  cursor: pointer;
 }
 
 .wrapper a {
@@ -285,6 +291,15 @@ border: unset;
   line-height: 36px;
   font-weight: 500;
 }
+
+iframe {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #777;
+    display: block;
+    border-style:none;
+}
 </style>
 
 <div class="wrapper">
@@ -318,9 +333,9 @@ border: unset;
   </div>
 
 
-
-<div class="  text-block pa-2">
-  <p class="text-body-2"> It was March 27, 2021, and an at-home day care in Grand Rapids was ready for a pool day. The day care’s owner took seven children — five of whom were just 2 and 3 years old — to a nearby Holiday Inn Express. She bought a room to use the hotel’s splash pad and two indoor pools, and charged parents $25 per child.</p>
+<div class=" text-block pa-2">
+  <p class="text-body-2"> It was March 27, 2021, and an at-home day care in Grand Rapids was ready for a pool day. The day care’s owner took seven children —
+     five of whom were just 2 and 3 years old — to a nearby Holiday Inn Express. She bought a room to use the hotel’s splash pad and two indoor pools, and charged parents $25 per child.</p>
 </div>
 
 <div class=" text-block pa-2">
@@ -344,55 +359,15 @@ border: unset;
   </p>
 </div>
 
-<div class=" text-block pa-2">
-  <p class="text-body-2">
-    Luckily, an off-duty paramedic and an off-duty nurse on vacation with their own children were nearby, and pulled the child out of the water, surveillance footage shows. Another adult ushered the other children away, later telling investigators that he didn’t want them to watch a child die.
-  </p>
+<div class="text-block pa-2">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/oVJXL1xDKI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </iframe>
 </div>
 
 <div class=" text-block pa-2">
   <p class="text-body-2">
-    The nurse gave the child mouth-to-mouth resuscitation for more than a minute and the paramedic then performed chest compressions for an additional 80 seconds, the time-stamped footage shows. After three rounds of 30 chest compressions, the little girl “came to,” they said, and vomited water before being taken to a nearby hospital.
-  </p>
-</div>
-
-<div class=" text-block pa-2">
-  <p class="text-body-2">
-    Surveillance footage from the pool showed the entire incident lasted 7 minutes.
-
-    It all happened, Williams told deputies, “in a blink of an eye."
-      </p>
-</div>
-
-<div class=" text-block pa-2">
-  <p class="text-body-2"> 
-    A month later, Williams’s day care license was revoked by the state and, in settlement documents, she did not deny the allegations. In hours of bodycam footage obtained for this project, Williams was clearly shaken and crying shortly after the incident, and told deputies that she is normally “so good with my kids.” 
-  </p>
-</div>
-
-<div class=" text-block pa-2">
-  <p class="text-body-2">
-    <a href="href="https://www.documentcloud.org/projects/michigan-child-care-project-209056/" >
-      [SEE THE DOCUMENTS HERE]
-    </a>
-  </p>
-</div>
-
-<div class=" text-block pa-2">
-  <p class="text-body-2">
-    Surveillance footage showed at least 21 children playing together in the pools, and Williams could be seen walking around the pools’ edges, watching them.
-  </p>
-</div>
-
-<div class=" text-block pa-2">
-  <p class="text-body-2">
-    “It’s tough, man. They can get away from you quick.”
-  </p>
-</div>
-
-<div class=" text-block pa-2">
-  <p class="text-body-2">
-    Child P’s guardian also didn’t want to press charges against Williams and, in fact, returned the girl to the same day care before it ultimately closed. Williams hung up the phone when reached for comment for this story.
+    Luckily, an off-duty paramedic and an off-duty nurse on vacation with their own children were nearby, and pulled the child out of the water, surveillance footage shows.
+     Another adult ushered the other children away, later telling investigators that he didn’t want them to watch a child die.
   </p>
 </div>
 
@@ -404,12 +379,15 @@ border: unset;
 
 <div class=" text-block pa-2">
   <p class="text-body-2">
-    Michigan’s child care industry is in full-blown crisis, according to “Disappearing Day Care,” a 10-month-long investigation by MuckRock and a consortium of Michigan newsrooms. Reporters collected years of investigative reports by Michigan’s childcare licensing bureau, testimonials from hundreds parents and providers and analyzed new state childcare data provided as part of pandemic federal relief programs. [READ MORE ABOUT “DISAPPEARING DAYCARE” HERE.]
+    Michigan’s child care industry is in full-blown crisis, according to “Disappearing Day Care,” a 10-month-long investigation by MuckRock and a consortium of Michigan newsrooms. 
+    Reporters collected years of investigative reports by Michigan’s childcare licensing bureau, testimonials from hundreds parents and providers and analyzed new state childcare data provided
+     as part of pandemic federal relief programs.
+      <a href="#methodology">[READ MORE ABOUT “DISAPPEARING DAYCARE” HERE.]</a>
   </p>
 </div>
 
 <div class=" text-block pa-2">
-  <p class="text-body-2">
+  <p class="text-body-2"> 
     The data and documents show the problem is even worse than policy makers thought.
   </p>
 </div>
@@ -450,13 +428,32 @@ border: unset;
 
 <div class="step" data-step="5">
 <div class="text-block pa-2">
-  <p class="text-body-2">In Wayne County, 11 ZIP codes in Detroit are weathering dire capacity shortages. One neighborhood, which includes Hamtramck and borders Highland Park, had as many as nine children per every available child care slot. The neighborhood, which is one of the poorest in the state, had a ratio more than three times the criteria to qualify as a desert. Outside of Detroit proper, wealthier Wayne County suburbs had less need: while the ratio of children to slots for the city was 2.8, the ratio for Wayne County overall was 2.5.
+  <p class="text-body-2">In Macomb County, a county-wide waiting list of more than 2,300 children attends parents in search of care, state data shows. </p>
   </div>            
 </div>
+
+<div class="step" data-step="6">
+  <div class="text-block pa-2">
+    <p class="text-body-2">Data also shows that nearly half of providers are under-enrolled. 48 percent of providers reported enrollments below license capacity to the state, for a difference of more than 4,000 slots.</p> 
+    <p class="text-body-2"> 
+    </p>
+    </div>            
+  </div>
+
+  <div class="step" data-step="7">
+    <div class="text-block pa-2">
+      <p class="text-body-2">In Wayne County, 11 ZIP codes in Detroit are weathering dire capacity shortages.
+         One neighborhood, which includes Hamtramck and borders Highland Park, had as many as nine children per every available child care slot.
+         The neighborhood, which is one of the poorest in the state, had a ratio more than three times the criteria to qualify as a desert.</p> 
+      <p class="text-body-2"> Outside of Detroit proper, wealthier Wayne County suburbs had less need: while the ratio of children to slots for the city was 2.8,
+         the ratio for Wayne County overall was 2.5.
+      </p>
+      </div>            
+    </div>
 </div>
 
 
-<!--Scrolly Ends-->
+<!--Scrollama Ends-->
 
 
 <div class="col-6 scrolly__chart">
@@ -474,14 +471,13 @@ border: unset;
 <script src="https://unpkg.com/scrollama"></script>    
 <script src="https://public.flourish.studio/resources/embed.js"></script>
 
-<!--Wrapper Re-Opens-->
+<!------------------------Wrapper Re-Opens-------------------------->
 <div class="wrapper">
-
 
 
 <div class="text-block pa-2">
   <p class="text-body-2">
-    After seeing the new data, Michigan’s Early Childhood Investment Corp. a public organization that contracts with the state to help run the child care system, said that it didn’t know the original child care desert figure was flawed, and that the original numbers were calculated using the best available data at that time.
+    After seeing the new data, <a href="https://www.google.com/url?q=https://www.ecic4kids.org/&sa=D&source=docs&ust=1661460719864915&usg=AOvVaw1H2FcJ5j7Y55nVHgAEaHGk">Michigan’s Early Childhood Investment Corp.</a> a public organization that contracts with the state to help run the child care system, said that it didn’t know the original child care desert figure was flawed, and that the original numbers were calculated using the best available data at that time.
   </p>
 </div>
 
@@ -593,7 +589,51 @@ border: unset;
     The most in-demand openings are those for the youngest children, ranging from newborns to 3 years old. They also require the most attention, which means more staff.
   </p>
 </div>
+
+
+<!--------------------------------SAFETY CONCERNS------------------------------->
+
+
+<div class=" text-block pa-2">
+  <p class="text-body-2">
+    <a href="href=https://www.documentcloud.org/projects/michigan-child-care-project-209056/">
+      [SEE THE DOCUMENTS HERE]
+    </a>
+  </p>
 </div>
+
+<div class=" text-block pa-2">
+  <p class="text-body-2">
+    Surveillance footage showed at least 21 children playing together in the pools, and Williams could be seen walking around the pools’ edges, watching them.
+  </p>
+</div>
+
+<div class=" text-block pa-2">
+  <p class="text-body-2">
+    “It’s tough, man. They can get away from you quick.”
+  </p>
+</div>
+
+<div class=" text-block pa-2">
+  <p class="text-body-2">
+    Child P’s guardian also didn’t want to press charges against Williams and, in fact, returned the girl to the same day care before it ultimately closed. Williams hung up the phone when reached for comment for this story.
+  </p>
+</div>
+
+
+<!---------------------------Methodology---------------------------------------->
+<div id="methodology" class="text-block pa-2 methodology">
+  <p class="text-body-2">
+    How we analyzed Michigan child care data
+  </p>
+  <p class="text-body-2">
+    Since 2021, Michigan legislators have publicly quoted a number estimating that 44% of Michiganders live in a child care “desert.” In reality, that number, calculated by the Michigan League for Public Policy, misinterprets the Center for American Progress’ (CAP) definition of what is a child care desert..... 
+  </p>
+</div>
+
+<!----------Wrapper closes below------->
+</div>
+
 
 <!-- This code from here on is derived from the side-by-side code example from the scrollama library which can be found here: https://github.com/russellgoldenberg/scrollama  -->
 <!-- I tweaked the function for handleStepEnter to accomodate the Flourish story! -->
@@ -635,13 +675,22 @@ return i === response.index;
 });
 
 // update graphic based on step
-const linkHead = 'https://flo.uri.sh/story/1661078/embed#slide-'
-const slide = response.index
+const linkHead = 'https://flo.uri.sh/story/1661078/embed#slide-';
+const slide = response.index;
 console.log("response index", response.index);
+const maxSlide = 4;
+const extraSlides = [
+  "https://flo.uri.sh/visualisation/11002689/embed",
+  "https://flo.uri.sh/visualisation/11009601/embed"
+]
+const src = slide > maxSlide ?
+  extraSlides[slide - maxSlide - 1] :
+  linkHead + slide;
 
 d3.select('.scrolly__chart iframe')
-.attr('src', linkHead + slide);
+.attr('src', src);
 }
+
 
 function setupStickyfill() {
 d3.selectAll(".sticky").each(function() {
