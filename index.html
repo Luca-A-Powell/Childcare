@@ -1,15 +1,83 @@
 <style>
+
+.detail.flatpage{
+  max-width: 100%;
+}
 .wrapper {
-font-family: 'Poppins', sans-serif;
-color: #1d1d1d;
+  font-family: Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  color: #333c47;
+  padding: 96px;
+  max-width:1000px;
 }
 
 .wrapper {
-padding: 96px 0;
+  padding: 96px;
 }
+
+body{
+  margin: 0;
+}
+
+.hero-wrapper {
+  /*background-color: gray;*/
+  max-width: 100%;
+  height:60vh;
+  display: flex;
+  margin-bottom: 10%;
+}
+
+#hero-left-div{
+  width: 49%;
+  line-height: 1.4375em;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2%;
+}
+
+#hero-dateline {
+  color: #97a1ad;
+    font-size: .8125rem;
+    font-weight: 500;
+    position:absolute;
+}
+#hero-title {
+  height: 25%;
+  font-size:3em;
+  line-height:1;
+  margin-top: 75px;
+}
+
+#hero-dek{
+  height:15%;
+  font-size: 1em;
+}
+
+.hero-right-div{
+    background-image: url('img/Screen Shot 2022-08-24 at 6.08.08 PM.png');
+    background-size: 117%;
+    background-repeat: no-repeat;
+    width: 77%;
+    box-shadow: 4px -20px 19px 18px white inset;
+    padding: 5%;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
 
 .font-secondary {
-font-family: 'Lora', serif !important;
+  font-family: 'Lora', serif !important;
 }
 
 .text-h1 {
@@ -26,11 +94,12 @@ line-height: 48px;
 font-size: 32px;
 line-height: 36px;
 font-weight: 500;
+}
 
 @media (min-width: @screen-sm-min) {
 font-size: 28px;
 line-height: 32px;
-}
+
 }
 
 .text-body-1 {
@@ -45,36 +114,39 @@ line-height: 28px;
 }
 
 .text-body-2 {
-font-size: 16px;
-font-weight: 400;
-line-height: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  max-width: 42em;
+  margin: 0 auto 2rem auto;
 
-@media (min-width: @screen-sm-min) {
-font-size: 14px;
-line-height: 24px;
+  @media (min-width: @screen-sm-min) {
+  font-size: 14px;
+  line-height: 24px;
 }
 }
 
 .blockquote {
-font-size: 32px;
-font-weight: 700;
-line-height: 36px;
-text-transform: uppercase;
-text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
 
-@media (min-width: @screen-sm-min) {
-font-size: 28px;
-}  
+  @media (min-width: @screen-sm-min) {
+  font-size: 28px;
+  }  
 }
 
 .text-caption {
-font-size: 14px;
-line-height: 22px;
+  font-size: 14px;
+  line-height: 22px;
 
-@media (min-width: @screen-sm-min) {
-font-size: 12px;
-line-height: 18px; 
-}
+  @media (min-width: @screen-sm-min) {
+  font-size: 12px;
+  line-height: 18px; 
+  }
 }
 
 .wrapper a {
@@ -94,12 +166,12 @@ word-break: break-word;
 /* @media (min-width: @screen-lg-min) { ... } */
 
 #scrolly__section {
-position: relative;
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
-background-color: #ffffff;
-padding: 1rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  padding: 1rem;
 }
 
 #scrolly__section > * {
@@ -146,11 +218,12 @@ color: #3b3b3b;
 
 .text-block {
 background-color: white;
+margin: 0 auto 2rem auto;
 }
 
 .step p {
-text-align: center;
-padding: 1rem;
+/*text-align: center;*/
+/*padding: 1rem;*/
 }
 
 iframe {
@@ -161,6 +234,44 @@ border: unset;
   overflow: inherit;
 }
 
+#scrolly__section > div.col-4.scrolly__content > div:nth-child(1){
+  padding-top: 50vh;
+}
+
+.link, a {
+    color: #4582cc;
+    text-decoration: none;
+}
+.contributors {
+    color: #97a1ad;
+    font-size: .8125rem;
+    font-weight: 500;
+}
+.authors{
+ float: left;
+}
+.editors{
+  float:right;
+  border-radius: 2%;
+}
+
+.findings {
+  background-color:#97a1ad;
+  padding: 5%;
+
+}
+.findings ul {
+  margin-top:10%;
+}
+.findings ul li {
+  margin-top:5%;
+}
+
+#subhed {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 500;
+}
 </style>
 
 <div class="wrapper">
@@ -172,40 +283,168 @@ border: unset;
 </div>
 </div>
 
-<div class="container-fluid" id="root">
+<div class="container-fluid"  id="root">
+  <div class="hero-wrapper">
+    <div id="hero-left-div">
+      <p id="hero-dateline">August 28th, 2022</p>
+      <p id="hero-title">Disappearing Daycare</p>
+      <p id="hero-dek">A consortium of newsrooms has found the number of childcare deserts in Michigan is double what policymakers quote. </p>
+      <div class="contributors">
+        <div class="authors">
+          Written by 
+          <a href="/accounts/profile/LucaPowell/" title="Luca Powell" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Luca Powell</span></a>        
+        </div>
+        <div class="editors">
+          Edited by
+          <a href="/accounts/profile/Derekk27/" title="Derek Kravitz" itemprop="editor" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">Derek Kravitz</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right-div">
+    </div>
+  </div>
+
+
+
+<div class="  text-block pa-2">
+  <p class="text-body-2"> It was March 27, 2021, and an at-home day care in Grand Rapids was ready for a pool day. The day care’s owner took seven children — five of whom were just 2 and 3 years old — to a nearby Holiday Inn Express. She bought a room to use the hotel’s splash pad and two indoor pools, and charged parents $25 per child.</p>
+</div>
+
+<div class=" text-block pa-2">
+  <p class="text-body-2"> None of the children had life jackets or arm floaties. The caregiver, Melanie Williams, was the only adult overseeing the seven children. At the time, Michigan law required one adult for, at most, four children at licensed at-home day cares. That rule has since been relaxed by state lawmakers to allow one caregiver for up to seven children.
+  </p>
+</div>
+
+<div class="step text-block pa-2">
+  <p class="text-body-2"> At 6:38 p.m., one of the smaller children — identified only as “Child P” in state investigators’ reports — ran away from the kiddie pools and climbed into the larger adult pool.
+  </p>
+</div>
+
+<div class=" text-block pa-2">
+  <p class="text-body-2"> Four minutes later, the girl’s head was underwater, her lips blue, her eyes open, lying flat on her back, witnesses said. 
+  </p>
+</div>
+
+<div class=" text-block pa-2">
+  <p class="text-body-2">
+    She wasn’t breathing and had no pulse.
+  </p>
+</div>
+
+<div class=" text-block pa-2">
+  <p class="text-body-2">
+    Luckily, an off-duty paramedic and an off-duty nurse on vacation with their own children were nearby, and pulled the child out of the water, surveillance footage shows. Another adult ushered the other children away, later telling investigators that he didn’t want them to watch a child die.
+  </p>
+</div>
+
+<div class=" text-block pa-2">
+  <p class="text-body-2">
+    The nurse gave the child mouth-to-mouth resuscitation for more than a minute and the paramedic then performed chest compressions for an additional 80 seconds, the time-stamped footage shows. After three rounds of 30 chest compressions, the little girl “came to,” they said, and vomited water before being taken to a nearby hospital.
+  </p>
+</div>
+
+<div class=" text-block pa-2">
+  <p class="text-body-2">
+    Surveillance footage from the pool showed the entire incident lasted 7 minutes.
+
+    It all happened, Williams told deputies, “in a blink of an eye."
+      </p>
+</div>
+
+<div class=" text-block pa-2">
+  <p class="text-body-2"> 
+    A month later, Williams’s day care license was revoked by the state and, in settlement documents, she did not deny the allegations. In hours of bodycam footage obtained for this project, Williams was clearly shaken and crying shortly after the incident, and told deputies that she is normally “so good with my kids.” 
+  </p>
+</div>
+
+<div class=" text-block pa-2">
+  <p class="text-body-2">
+    <a href="href="https://www.documentcloud.org/projects/michigan-child-care-project-209056/" >
+      [SEE THE DOCUMENTS HERE]
+    </a>
+  </p>
+</div>
+
+<div class=" text-block pa-2">
+  <p class="text-body-2">
+    Surveillance footage showed at least 21 children playing together in the pools, and Williams could be seen walking around the pools’ edges, watching them.
+  </p>
+</div>
+
+<div class=" text-block pa-2">
+  <p class="text-body-2">
+    “It’s tough, man. They can get away from you quick.”
+  </p>
+</div>
+
+<div class=" text-block pa-2">
+  <p class="text-body-2">
+    Child P’s guardian also didn’t want to press charges against Williams and, in fact, returned the girl to the same day care before it ultimately closed. Williams hung up the phone when reached for comment for this story.
+  </p>
+</div>
+
+<div class=" text-block pa-2">
+  <p class="text-body-2">
+    Child P survived, but her brush with drowning underscores the stakes as Michigan’s child care industry deteriorates. Poorly paid and increasingly overworked child care workers are being tasked to care for the state’s 560,000 children.
+  </p>
+</div>
+
+<div class=" text-block pa-2">
+  <p class="text-body-2">
+    Michigan’s child care industry is in full-blown crisis, according to “Disappearing Day Care,” a 10-month-long investigation by MuckRock and a consortium of Michigan newsrooms. Reporters collected years of investigative reports by Michigan’s childcare licensing bureau, testimonials from hundreds parents and providers and analyzed new state childcare data provided as part of pandemic federal relief programs. [READ MORE ABOUT “DISAPPEARING DAYCARE” HERE.]
+  </p>
+</div>
+
+<div class=" text-block pa-2">
+  <p class="text-body-2">
+    The data and documents show the problem is even worse than policy makers thought.
+  </p>
+</div>
+
+<!--Beginning of Scrollama-->
 <div class="row justify-content-center" id="scrolly__section">
 <div class="col-4 scrolly__content">
+
+
 <div class="step" data-step="1">
 <div class="text-block pa-2">
-<p class="text-h2">title maybe</p>
-<!--<p class="text-body-2">In 2020, the Michigan League for Public Policy reported 11 counties could be considered <span style="background-color:#e17c05; color:#ffffff;"> &nbsp;child care deserts&nbsp;</span> because they had more than three children under five for every available child care spot.</p>-->
+<p class="text-h2 scrolly-subhed">Nearly double the child care deserts</p>
+<p class="text-body-2">At the beginning of the pandemic, the Michigan League for Public Policy, a Lansing-based nonprofit, created a list of 11 so-called “child care deserts.” These are regions where three children compete for every available slot at an in-home or group center.
+</p>
+
 </div>
 </div>
 <div class="step" data-step="2">
 <div class="text-block pa-2">
 <!--<p class="text-body-2">lorem 2</p>-->
-<p class="text-body-2">In 2020, the Michigan League for Public Policy reported 11 counties could be considered <span style="background-color:#e17c05; color:#ffffff;"> &nbsp;child care deserts&nbsp;</span> because they had more than three children under five for every available child care spot.</p>
+<p class="text-body-2">But those deserts were calculated using the capacity of licensed child care facilities located in a particular county. The practice overstates the number of spots available and thus hides the true picture of child care availability in Michigan. Many of these licensed child care slots remain empty for a variety of reasons.
+</p>
 </div>            
 </div>
 <div class="step" data-step="3">
 <div class="text-block pa-2">
-<p class="text-body-2">lorem 3</p>
-<p class="text-body-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis modi labore unde commodi, dolorem ut enim, necessitatibus odit facere et pariatur minus! Aliquam rem earum tempore accusamus corporis similique.</p>
+  <p class="text-body-2">Through state Freedom of Information Act requests and a first-of-its-kind data analysis of child care records, we found the number of day care deserts in Michigan is nearly double previous estimates.
+  </p>
+
 </div>            
 </div>
 <div class="step" data-step="4">
 <div class="text-block pa-2">
-<p class="text-body-2">lorem 5</p>
-<p class="text-body-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis modi labore unde commodi, dolorem ut enim, necessitatibus odit facere et pariatur minus! Aliquam rem earum tempore accusamus corporis similique.</p>
+  <p class="text-body-2">A total of 20 counties have so few child care options that they qualify as deserts, the data shows. Another 23 Michigan counties, including Detroit’s Wayne and Macomb counties, are rounding errors away from qualifying as deserts as well. 
+  </p>
 </div>            
 </div>
+
 <div class="step" data-step="5">
 <div class="text-block pa-2">
-<p class="text-body-2">lorem 5</p>
-<p class="text-body-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis modi labore unde commodi, dolorem ut enim, necessitatibus odit facere et pariatur minus! Aliquam rem earum tempore accusamus corporis similique.</p>
-</div>            
+  <p class="text-body-2">In Wayne County, 11 ZIP codes in Detroit are weathering dire capacity shortages. One neighborhood, which includes Hamtramck and borders Highland Park, had as many as nine children per every available child care slot. The neighborhood, which is one of the poorest in the state, had a ratio more than three times the criteria to qualify as a desert. Outside of Detroit proper, wealthier Wayne County suburbs had less need: while the ratio of children to slots for the city was 2.8, the ratio for Wayne County overall was 2.5.
+  </div>            
 </div>
 </div>
+
+
+<!--Scrolly Ends-->
+
 
 <div class="col-6 scrolly__chart">
 <iframe scrolling="no" src="https://flo.uri.sh/story/1661078/embed#slide-0"></iframe>
@@ -214,6 +453,7 @@ border: unset;
 </div>
 </div>
 
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
@@ -221,6 +461,126 @@ border: unset;
 <script src="https://unpkg.com/scrollama"></script>    
 <script src="https://public.flourish.studio/resources/embed.js"></script>
 
+<!--Wrapper Re-Opens-->
+<div class="wrapper">
+
+
+
+<div class="text-block pa-2">
+  <p class="text-body-2">
+    After seeing the new data, Michigan’s Early Childhood Investment Corp. a public organization that contracts with the state to help run the child care system, said that it didn’t know the original child care desert figure was flawed, and that the original numbers were calculated using the best available data at that time.
+  </p>
+</div>
+
+<div class="text-block pa-2">
+  <p class="text-body-2">
+    Based on the new, larger numbers, “it’s clear that families do not have access to child care to meet their needs,” the ECIC said in a statement. 
+  </p>
+</div>
+
+<!--Findings Section-->
+<div class="findings text-block text-body-2 pa-2">
+  <p id="findings-title">Our analysis also found:</p>
+  <ul>
+    <li>
+      Statewide capacity estimates of 373,000 day care “slots” for Michigan’s children are an illusion. Actual enrollments are closer to 336,000. The gap of about 37,000 slots reflects key industry pain points such as staffing, high costs and the disruption caused by COVID-19.  
+    </li>
+
+    <li>
+      About 23% of centers that received state grants don’t serve newborns up to 3-year-olds, a critical age range for care. Out of a total of 140,000 slots at grant recipient facilities, roughly 11,500just 12,000 served infants and another 3029,000 served toddlers. 
+    </li>
+
+    <li>
+      During the pandemic, closures heavily outpaced openings. Since February 2020, Michigan has 637 fewer child care providers, a 7% drop, according to state data. Family providers closed at several times the rate of high capacity centers in urban areas, a shift that exacerbates the daycare drought for rural parents. In 2018, a pre-covid year, 1,000 group and family homes closed, while just 486 centers opened to replace them.
+    </li>
+
+    <li>
+      A cumulative statewide waiting list includes at least 54,057 children. On a population-adjusted basis, a waiting list of more than 3,200 was the longest, by far, in Grand Traverse County, a rural, northwest Michigan county which saw more than a third of its childcare facilities close over the past three years. As of June, Oakland, Kent and Washtenaw counties all had waitlists longer than 5,000.    </li>
+
+    <li>
+      State aid missed 2,364 providers, a reflection of disinterest in government help, even as the child care business model becomes increasingly untenable. Providers cited concerns around government intrusion into their curriculum and mistrust that the grants would really be tax-free.
+    </li>
+
+  </ul>
+</div>
+
+<div class="text-block pa-2">
+  <p class="text-body-2">
+    Advocates, policymakers and experts said that bad data has long dogged efforts to improve the state’s child care industry and that the findings from “Disappearing Day Care” only underscores the lingering problems.
+  </p>
+</div>
+
+<div class="text-block pa-2">
+  <p class="text-body-2">
+    State Rep. Brenda Carter (D-Oakland County), who sits on the Michigan House Families, Children and Seniors Committee, said our findings show “just how urgent” the need for child care reforms have become.
+  </p>
+</div>
+
+<div class="text-block pa-2">
+  <p class="text-body-2">
+    Lisa Brewer-Walraven, director of the Michigan Department of Education’s Childcare Division, said she didn’t dispute that more counties than previously known qualify as deserts. “What we’re focused on is the solutions,” Brewer-Walraven said. 
+  </p>
+</div>
+
+<div class="text-block pa-2">
+  <p class="text-body-2">
+    Michigan Gov. Gretchen Whitmer, a first-term Democrat running for re-election this year, has made expanding child care one of her administration’s key initiatives, noting her “first-hand experience” in trying to find affordable child care and pledging $100 million in state money to open 1,000 more child care facilities by 2024. In a point-by-point response to our findings, her office asserted that “under Gov. Whitmer’s leadership, the state has worked with providers to keep them open and serving kids” and provided testimonials from nearly 900 providers who received grant funding.
+  </p>
+</div>
+
+<div class="text-block pa-2">
+  <p class="text-body-2">
+    But her office also noted the daunting issues facing Michigan’s child care industry — and the net loss of more than 600 providers during the pandemic.
+  </p>
+</div>
+
+
+<div class="text-block pa-2">
+  <p class="text-body-2">
+    “All families deserve to have child care that meets their needs — regardless of where they live, how much money they make, their race, ethnicity or immigration status,” the governor’s office said in a statement. “In too many Michigan communities, families cannot find the child care they need.”
+  </p>
+</div>
+
+<div class="text-block pa-2 text-body-2">
+  <p class="text-h2 scrolly-subhed" style="border-top: none;">Nearly double the child care deserts</p>
+</div>
+
+<div class="text-block pa-2">
+  <p class="text-body-2">
+    Less than half of Michigan’s 8,000 active child care facilities give real-time numbers to the state. For these providers, who work with Michigan’s Great Start to Quality program, officials can see each facilities’ enrollment numbers.
+  </p>
+</div>
+
+<div class="text-block pa-2">
+  <p class="text-body-2">
+    For more than 4,000 other facilities, however, the Michigan Department of Education knows only their licensed maximum. That number, known as “license capacity,” can be significantly different from the actual number of children enrolled at a given time. 
+  </p>
+</div>
+
+<div class="text-block pa-2">
+  <p class="text-body-2">
+    Child care finance expert Louise Stoney described license capacity as a useless number for planning purposes. Stoney’s group, Opportunities Exchange, consults with a number of state education departments on the economics of early education reform.
+  </p>
+</div>
+
+<div class="text-block pa-2">
+  <p class="text-body-2">
+    “The real issue is staffed capacity,” Stoney said. “How many classrooms are you staffed to run? That’s the real number.”
+  </p>
+</div>
+
+<div class="text-block pa-2">
+  <p class="text-body-2">
+    But many Michigan providers said they haven’t been able to fully staff in months. Some run as many as 80 children under capacity, even as parents line up at the door for coveted spots.
+  </p>
+</div>
+
+<div class="text-block pa-2">
+  <p class="text-body-2">
+    The most in-demand openings are those for the youngest children, ranging from newborns to 3 years old. They also require the most attention, which means more staff.
+  </p>
+</div>
+</div>
 
 <!-- This code from here on is derived from the side-by-side code example from the scrollama library which can be found here: https://github.com/russellgoldenberg/scrollama  -->
 <!-- I tweaked the function for handleStepEnter to accomodate the Flourish story! -->
@@ -276,6 +636,24 @@ Stickyfill.add(this);
 });
 }
 
+//Luca added this to remove horizontal lines from the page
+function removeLines(){
+  pTags = document.querySelectorAll("p")
+  for (let i = 0;i<pTags.length;i++){
+    pTags[i].style.borderTop = "none";
+  }
+
+  divTags = document.querySelectorAll("div")
+  for (let i = 0;i<divTags.length;i++){
+    divTags[i].style.borderTop = "none";
+  }
+}
+
+function makeWhite(){
+  background = document.querySelector("body").style.backgroundColor="white";
+}
+//End of Luca's additions
+
 function init() {
 setupStickyfill();
 handleResize();
@@ -292,4 +670,8 @@ window.addEventListener("resize", handleResize);
 }
 
 init();
+
+//Call to remove lines
+removeLines();
+makeWhite()
 </script>
