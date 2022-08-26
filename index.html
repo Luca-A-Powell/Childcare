@@ -31,7 +31,8 @@ a {
 }
 
 #hero-left-div{
-  width: 49%;
+  width: 50%;
+  height: 60vh;
   line-height: 1.4375em;
   justify-content: center;
   align-content: center;
@@ -59,12 +60,18 @@ a {
 }
 
 .hero-right-div{
-    background-image: url('img/Screen Shot 2022-08-24 at 6.08.08 PM.png');
-    background-size: 117%;
+    width:50%;
+    height: 60vh;
+    line-height: 1.4375em;
+    background-image: url('img/Montessori_081822_12_MW.jpg');
+    background-size: 600px 500px;
     background-repeat: no-repeat;
-    width: 77%;
     box-shadow: 4px -20px 19px 18px white inset;
-    padding: 5%;
+    padding: 2%;
+
+    @media (min-width: $screen-sm-min){
+      display:none;
+    }
 }
 
 .fill {
@@ -178,6 +185,21 @@ word-break: break-word;
 
 /* Small devices (tablets, 768px and up) */
 /* @media (min-width: @screen-sm-min) { ... } */
+@media only screen and (max-width: 1000px) {
+  .hero-right-div {
+    display:none;
+    height: 100%;
+  }
+
+  #hero-left-div{
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid black;
+  }
+  .hero-wrapper{
+    height: 40vh;
+  }
+}
 
 /* Medium devices (desktops, 992px and up) */
 /* @media (min-width: @screen-md-min) { ... } */
@@ -276,10 +298,14 @@ border: unset;
 }
 
 .findings {
-  background-color:#97a1ad;
+  border-style: solid;
   padding: 5%;
-
 }
+
+.findings p {
+  text-align: justify;
+}
+
 .findings ul {
   margin-top:10%;
 }
@@ -489,8 +515,8 @@ iframe {
 </div>
 
 <!--Findings Section-->
-<div class="findings text-block text-body-2 pa-2">
-  <p id="findings-title">Our analysis also found:</p>
+<article class="findings text-block text-body-2 pa-2">
+  <p id="findings-title">Findings:</p>
   <ul>
     <li>
       Statewide capacity estimates of 373,000 day care “slots” for Michigan’s children are an illusion. Actual enrollments are closer to 336,000. The gap of about 37,000 slots reflects key industry pain points such as staffing, high costs and the disruption caused by COVID-19.  
@@ -512,7 +538,7 @@ iframe {
     </li>
 
   </ul>
-</div>
+</article>
 
 <div class="text-block pa-2">
   <p class="text-body-2">
@@ -684,8 +710,8 @@ const slide = response.index;
 console.log("response index", response.index);
 const maxSlide = 4;
 const extraSlides = [
-  "https://flo.uri.sh/visualisation/11002689/embed",
-  "https://flo.uri.sh/visualisation/11009601/embed"
+  "https://flo.uri.sh/visualisation/11019624/embed",
+  "https://flo.uri.sh/visualisation/11019137/embed"
 ]
 const src = slide > maxSlide ?
   extraSlides[slide - maxSlide - 1] :
