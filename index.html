@@ -1,13 +1,13 @@
 <style>
 
-
 .detail.flatpage{
   max-width: 100%;
 }
+
 .wrapper {
   font-family: Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
   color: #333c47;
-  padding: 96px;
+  padding: 32px;
   max-width:1000px;
   margin: 0 auto;
   margin-bottom: 0;
@@ -26,7 +26,8 @@ a {
   max-width: 100%;
   height:60vh;
   display: flex;
-  margin-bottom: 10%;
+  margin-bottom: 2%;
+
 }
 
 #hero-left-div{
@@ -38,6 +39,7 @@ a {
   flex-direction: column;
   text-align: center;
   padding: 2%;
+  
 }
 
 #hero-dateline {
@@ -47,10 +49,11 @@ a {
     position:absolute;
 }
 #hero-title {
-  height: 25%;
-  font-size:3em;
-  line-height:1;
-  margin-top: 75px;
+    font-size: 3em;
+    line-height: 1;
+    margin-top: 150px;
+    margin-bottom: 5%;
+
 }
 
 #hero-dek{
@@ -62,15 +65,11 @@ a {
     width:50%;
     height: 60vh;
     line-height: 1.4375em;
-    background-image: url('img/Screen Shot 2022-08-24 at 6.08.08 PM.png');
+    background-image: url('https://cdn.muckrock.com/news_photos/2022/08/26/Screen_Shot_2022-08-24_at_6.08.08_PM.png');
     background-size: 600px 500px;
     background-repeat: no-repeat;
     box-shadow: 4px -20px 19px 18px white inset;
     padding: 2%;
-
-    @media (min-width: $screen-sm-min){
-      display:none;
-    }
 }
 
 .fill {
@@ -91,13 +90,13 @@ a {
 }
 
 .text-h1 {
-font-size: 36px;
-line-height: 52px;
+  font-size: 36px;
+  line-height: 52px;
 
-@media (min-width: @screen-sm-min) {
-font-size: 32px;
-line-height: 48px;
-}
+  @media (min-width: @screen-sm-min) {
+  font-size: 32px;
+  line-height: 48px;
+  }
 }
 
 .last-graf{
@@ -115,20 +114,20 @@ font-weight: 500;
 }
 
 @media (min-width: @screen-sm-min) {
-font-size: 28px;
-line-height: 32px;
+  font-size: 28px;
+  line-height: 32px;
 
 }
 
 .text-body-1 {
-font-size: 20px;
-font-weight: 400;
-line-height: 32px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
 
-@media (min-width: @screen-sm-min) {
-font-size: 18px;
-line-height: 28px;
-}
+  @media (min-width: @screen-sm-min) {
+  font-size: 18px;
+  line-height: 28px;
+  }
 }
 
 .text-body-2 {
@@ -192,27 +191,21 @@ word-break: break-word;
 
 /* Small devices (tablets, 768px and up) */
 /* @media (min-width: @screen-sm-min) { ... } */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
+  .hero-wrapper{
+  }
+
   .hero-right-div {
     display:none;
-    height: 100%;
   }
 
   #hero-left-div{
-    width: 100%;
-    height: 100%;
-    border-bottom: 2px solid black;
-  }
-  .hero-wrapper{
-    height: 40vh;
+    width: 80%;
+    min-width: 20%;
+    margin: 0 auto;
+
   }
 }
-
-/* Medium devices (desktops, 992px and up) */
-/* @media (min-width: @screen-md-min) { ... } */
-
-/* Large devices (large desktops, 1200px and up) */
-/* @media (min-width: @screen-lg-min) { ... } */
 
 #scrolly__section {
   position: relative;
@@ -384,16 +377,15 @@ iframe {
   </div>
 
 
-<div class=" text-block pa-2">
+<div class="text-block pa-2">
   <p class="text-body-2">
     It was March 27, 2021, and an at-home day care in Grand Rapids was ready for a pool day. The day care’s owner took seven children — five of whom were just 2 and 3 years old — to a nearby Holiday Inn Express. She bought a room to use the hotel’s splash pad and two indoor pools, and charged parents $25 per child.
-
     </p>
 </div>
 
 <div class=" text-block pa-2">
   <p class="text-body-2"> 
-    None of the children had life jackets or arm floaties. The caregiver, Melanie Williams, was the only adult overseeing the seven children. At the time, Michigan law required one adult for every six children at licensed at-home day cares. That rule has since been relaxed by state lawmakers.
+    None of the children had life jackets or arm floaties. The caregiver, Melanie Williams, <a href="https://www.mlive.com/news/grand-rapids/2021/05/daycare-license-suspended-after-child-nearly-drowns-in-pool.html">was the only adult overseeing the seven children.</a> At the time, Michigan law required one adult for every six children at licensed at-home day cares. That rule has since been relaxed by state lawmakers.
   </p>
 </div>
 
@@ -416,8 +408,7 @@ iframe {
 </div>
 
 <div class="text-block pa-2">
-  <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </iframe>
+  <iframe src="https://player.vimeo.com/video/743497445" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
 
 <div class=" text-block pa-2">
@@ -429,7 +420,7 @@ iframe {
 
 <div class=" text-block pa-2">
   <p class="text-body-2">
-    Child P survived, but her brush with drowning underscores the stakes as Michigan’s child care industry deteriorates. Poorly paid and increasingly overworked child care workers are being tasked to care for the state’s 560,000 children.
+    Child P survived, but her brush with drowning underscores the stakes as Michigan’s child care industry deteriorates. Overwhelmed by demand, Michigan’s child care industry is in full-blown crisis, according to “Disappearing Day Care,” a 10-month-long investigation by MuckRock and a consortium of Michigan newsrooms. Reporters collected years of investigative reports by Michigan’s child care licensing bureau, testimonials from hundreds of parents and providers, and analyzed new state child care data provided as part of pandemic federal relief programs.
   </p>
 </div>
 
@@ -1051,12 +1042,12 @@ Stickyfill.add(this);
 function removeLines(){
   pTags = document.querySelectorAll("p")
   for (let i = 0;i<pTags.length;i++){
-    pTags[i].style.borderTop = "none";
+      pTags[i].style.borderTop = "none";
   }
 
   divTags = document.querySelectorAll("div")
   for (let i = 0;i<divTags.length;i++){
-    divTags[i].style.borderTop = "none";
+      divTags[i].style.borderTop = "none"; 
   }
 }
 
